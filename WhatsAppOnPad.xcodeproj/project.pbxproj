@@ -12,6 +12,7 @@
 		AA9FB67E214641DE00D11483 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA9FB67C214641DE00D11483 /* Main.storyboard */; };
 		AA9FB680214641E000D11483 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA9FB67F214641E000D11483 /* Assets.xcassets */; };
 		AA9FB683214641E000D11483 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA9FB681214641E000D11483 /* LaunchScreen.storyboard */; };
+		AA9FB68C2146434B00D11483 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA9FB68B2146434B00D11483 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		AA9FB67F214641E000D11483 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA9FB682214641E000D11483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA9FB684214641E000D11483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA9FB68B2146434B00D11483 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA9FB68C2146434B00D11483 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				AA9FB677214641DE00D11483 /* WhatsAppOnPad */,
 				AA9FB676214641DE00D11483 /* Products */,
+				AA9FB68A2146434A00D11483 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +66,14 @@
 				AA9FB684214641E000D11483 /* Info.plist */,
 			);
 			path = WhatsAppOnPad;
+			sourceTree = "<group>";
+		};
+		AA9FB68A2146434A00D11483 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA9FB68B2146434B00D11483 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
