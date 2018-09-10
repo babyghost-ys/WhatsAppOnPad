@@ -35,7 +35,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="WhatsApp" id="TYJ-P7-tok"/>
+                    <navigationItem key="navigationItem" title="WhatsApp" id="TYJ-P7-tok">
+                        <barButtonItem key="rightBarButtonItem" id="hEf-Ov-rYa">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="M7d-Di-sjt">
+                                <rect key="frame" x="578" y="10" width="170" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Clear Cache"/>
+                                <connections>
+                                    <action selector="clearWebCache:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YZE-l7-eMH"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="mainWebView" destination="Mp5-Gz-NV1" id="t5T-y1-gKq"/>
                     </connections>

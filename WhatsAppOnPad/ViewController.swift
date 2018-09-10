@@ -29,5 +29,23 @@ class ViewController: UIViewController {
         
         mainWebView.load(URLRequest(url: finalURL))
     }
+    
+    //MARK: Function to clear the web cache, in case the user wants to logout.
+    @IBAction func clearWebCache(_ sender: UIButton) {
+        
+        //This part is for removing cookies
+        HTTPCookieStorage.shared.removeCookies(since: Date.distantPast)
+        
+        //This part is for removing cache
+        WKWebsiteDataStore.default().fetchDataRecords(ofTypes: WKWebsiteDataStore.allWebsiteDataTypes()) { records in
+            records.forEach { record in
+                WKWebsiteDataStore.default().removeData(ofTypes: record.dataTypes, for: [record], completionHandler: {})
+
+                //After it's done, reload the web page
+                self.mainWebView.reload()
+            }
+        }
+    }
+    
 }
 
